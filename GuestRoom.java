@@ -1,12 +1,12 @@
 public class GuestRoom extends Room implements rmCharacteristics {
 
-    String roomName;
     int numberOfBeds;
     boolean desk;
     int heightInFeet = 8, widthInFeet = 10, lengthInFeet = 20;
+    String floorMaterial = "carpet", primaryPaintColor = "Blue";
 
     //constructor
-    public GuestRoom (String roomName) {
+    GuestRoom (String roomName) {
         super(roomName);
     }
 

@@ -1,6 +1,6 @@
 public class WeightRoom extends Room implements rmCharacteristics {
     int heightInFeet = 10, widthInFeet = 20, lengthInFeet = 60;
-    String floorMaterial = "cork", primaryPaintColor = "mauve";;
+    String floorMaterial = "cork", primaryPaintColor = "Mauve";
     boolean freeWeights, cardio, cableMachines;
 
     //constructor

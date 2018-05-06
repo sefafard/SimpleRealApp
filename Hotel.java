@@ -28,7 +28,7 @@ public class Hotel {
             hotel1.listInfo();
             hotel1.buildRooms();
             if (args[2].equals("Yes")) {
-                WeightRoom wr = new WeightRoom("Weight room");
+                WeightRoom wr = new WeightRoom("Weightroom");
                 wr.roomCharacteristics();
             }
             if (args[3].equals("Yes")) {
@@ -40,33 +40,26 @@ public class Hotel {
                 swimmingPool.roomCharacteristics();
             }
 
+            // GuestRoom gr2 = new GuestRoom("M999");
+            // gr2.roomCharacteristics();
+
         } else {
-            System.out.println("Usage is:  <command> Hotel name, num rooms, weoghtroomYN, barYN, poolYN");
+            System.out.println("Usage is:  <command> Hotel name, num rooms, weightroomYN, barYN, poolYN");
             return;
         }
     }
 
     //create numberOfGuestRooms rooms
     public void buildRooms() {
-    int i = 0, roomNo=0; 
-    String newRoom = "";
-    GuestRoom room = null;
-    
-    for (i=0; i < numberOfGuestRooms; i++) {
-        roomNo = 100 + i + 1;  //gotta start with room #1
-        room = new GuestRoom (String.valueOf(roomNo)); //room number
-        newRoom = newRoom + " " + String.valueOf(roomNo);
-        System.out.println(roomNo + " " + room.roomName);
-        }
-
-        System.out.print("Created room numbers: ");
-        System.out.println(newRoom);
+        int i = 0, roomNo=0; 
+                GuestRoom gr1 = null;
+        // gr1.roomCharacteristics();
     
         for (i=0; i < numberOfGuestRooms; i++) {
-        //    System.out.println(room[i].roomName);
-        // System.out.println(i);
+            roomNo = 100 + i + 1;  //gotta start with room #1
+            gr1 = new GuestRoom (String.valueOf(roomNo)); //room number        
+            gr1.roomCharacteristics();
         }
-    
     }
 
     public void listInfo() {
