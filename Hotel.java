@@ -28,6 +28,7 @@ public class Hotel {
             hotel1.listInfo();
             Manager mgr = new Manager("manager",40);
             mgr.primaryWork();
+            mgr.works(40);
             hotel1.buildRooms();
             if (args[2].equals("Yes")) {
                 WeightRoom wr = new WeightRoom("Weightroom");
@@ -37,6 +38,7 @@ public class Hotel {
                 Bar bar = new Bar("Bar");
                 Bartender barkeep = new Bartender("bartender", 20);
                 barkeep.primaryWork();
+                barkeep.works(20);
                 bar.roomCharacteristics();
             }
             if (args[4].equals("Yes")) {
@@ -64,8 +66,9 @@ public class Hotel {
             gr1 = new GuestRoom (String.valueOf(roomNo)); //room number        
             gr1.roomCharacteristics();
         }
-        Maid maid = new Maid("Molly Maid", 42);
+        Maid maid = new Maid("Molly Maid", 60);
         maid.primaryWork();
+        maid.works(60);
     }
 
     public void listInfo() {

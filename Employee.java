@@ -11,7 +11,7 @@ public abstract class Employee {
 
     //methods
     public void works(int workHrsPerWeek) {
-
+        System.out.println("I work " +workHrsPerWeek +" hours per weeek.");
     }
 
     public void takesBreak (int breakHrsPerWeek) {

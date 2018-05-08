@@ -5,16 +5,9 @@ public class Maid extends Employee implements primWork {
     super (job, workHrsPerWeek);
 }
 // methods
-    public void makesBed () {
-
-    }
-
-    public void cleansBathroom () {
-        
-    }
 
     public void primaryWork() {
-        System.out.println("My job is:  "+ job +".  I work " + workHrsPerWeek +" hours per week.");
+        System.out.println("My job is:  "+ job +".");
         System.out.println("I primarily clean the guest rooms.");
     }
 }
