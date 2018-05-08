@@ -1,8 +1,8 @@
-public class Maid extends Employee {
+public class Maid extends Employee implements primWork {
 
 //constructor
-public Maid (String job, int numHours) {
-    super (job, numHours);
+     Maid (String job, int workHrsPerWeek) {
+    super (job, workHrsPerWeek);
 }
 // methods
     public void makesBed () {
@@ -11,5 +11,10 @@ public Maid (String job, int numHours) {
 
     public void cleansBathroom () {
         
+    }
+
+    public void primaryWork() {
+        System.out.println("My job is:  "+ job +".  I work " + workHrsPerWeek +" hours per week.");
+        System.out.println("I primarily clean the guest rooms.");
     }
 }

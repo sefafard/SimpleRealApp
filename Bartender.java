@@ -1,7 +1,7 @@
-public class Bartender extends Employee {
+public class Bartender extends Employee implements primWork {
 
-    public Bartender (String job, int numHours) {
-        super (job, numHours);
+    Bartender (String job, int workHrsPerWeek) {
+        super (job, workHrsPerWeek);
     }
 
     //methods
@@ -14,5 +14,10 @@ public class Bartender extends Employee {
 
     public void cleansBar () {
 
+    }
+
+    public void primaryWork() {
+        System.out.println("My job is:  "+ job +".  I work " + workHrsPerWeek +" hours per week.");
+        System.out.println("I primarily serve cocktails.");
     }
 }

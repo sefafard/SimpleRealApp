@@ -26,6 +26,8 @@ public class Hotel {
             int result = Integer.parseInt(args[1]);
             Hotel hotel1 = new Hotel(args[0], result, args[2], args[3], args[4]);
             hotel1.listInfo();
+            Manager mgr = new Manager("manager",40);
+            mgr.primaryWork();
             hotel1.buildRooms();
             if (args[2].equals("Yes")) {
                 WeightRoom wr = new WeightRoom("Weightroom");
@@ -33,6 +35,8 @@ public class Hotel {
             }
             if (args[3].equals("Yes")) {
                 Bar bar = new Bar("Bar");
+                Bartender barkeep = new Bartender("bartender", 20);
+                barkeep.primaryWork();
                 bar.roomCharacteristics();
             }
             if (args[4].equals("Yes")) {
@@ -60,6 +64,8 @@ public class Hotel {
             gr1 = new GuestRoom (String.valueOf(roomNo)); //room number        
             gr1.roomCharacteristics();
         }
+        Maid maid = new Maid("Molly Maid", 42);
+        maid.primaryWork();
     }
 
     public void listInfo() {

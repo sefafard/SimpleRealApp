@@ -1,7 +1,7 @@
-public class Manager extends Employee {
+public class Manager extends Employee implements primWork {
 
-    public Manager (String job, int numHours) {
-        super (job, numHours);
+    Manager (String job, int workHrsPerWeek) {
+        super (job, workHrsPerWeek);
     }
 
     // methods
@@ -11,5 +11,10 @@ public class Manager extends Employee {
     
     static void doesWork() {
 
+    }
+
+    public void primaryWork() {
+        System.out.println("My job is:  "+ job +".  I work " + workHrsPerWeek + " hours per week.");
+        System.out.println("I primarily supervise others' work.");
     }
 }

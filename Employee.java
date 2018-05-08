@@ -1,20 +1,20 @@
 public abstract class Employee {
 
     String job;
-    int numHours;
+    int workHrsPerWeek, breakHrsPerWeek;
 
     //constructor
-    public Employee (String job, int numHours) {
+    public Employee (String job, int workHrsPerWeek) {
         this.job = job;
-        this.numHours = numHours;
+        this.workHrsPerWeek = workHrsPerWeek;
     }
 
     //methods
-    public void works(int numHours) {
+    public void works(int workHrsPerWeek) {
 
     }
 
-    public void takesBreak (int numHours) {
+    public void takesBreak (int breakHrsPerWeek) {
 
     }
 }
